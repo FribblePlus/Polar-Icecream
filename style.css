@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*Pulse animation*/
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #da055766;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+
+
 /* Common things */
 * {
     margin: 0;
@@ -57,6 +74,7 @@ nav .Navigation .menu a.menubutton {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    animation: pulse512 1.0s infinite;
 }
 
 nav .Navigation .menu li a {
@@ -70,6 +88,11 @@ nav .Navigation .menu li a {
     text-align: center;
     padding: 16px;
     text-decoration: none;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+nav .Navigation .menu li a:hover {
+    color: #000;
 }
 
 nav .Navigation .menu li a.active {
@@ -91,6 +114,10 @@ nav .Navigation a.button {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+nav .Navigation a.button:hover {
+    animation: pulse512 1.0s infinite;
 }
 
 .open-menu,
@@ -187,7 +214,9 @@ header .Hero .text a.button {
     line-height: normal;
     margin-top: 20px;
 }
-
+header .Hero .text a.button:hover {
+    animation: pulse512 1.0s infinite;
+}
 header .Hero img {
     width: 44%;
     margin-top: 65px;
@@ -220,11 +249,19 @@ header .Hero img {
     height: 200px;
     border: 1px solid #0f010111;
     border-radius: 7px;
-    box-shadow: 20px 20px 50px 0px rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
 
+    &:hover {
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        border: 1px solid #0f010111;
+        transform: translateY(-5px) scale(1.03);
+        background-color: white;
+    }
 }
 
 #Services .Services .card img {
@@ -313,6 +350,9 @@ header .Hero img {
     line-height: normal;
     margin-top: 20px;
 }
+#Oatmea .Oatmea .information a.details:hover {
+    animation: pulse512 1.0s infinite;
+}
 
 
 
@@ -367,6 +407,13 @@ header .Hero img {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+#Products .Products .top-menu li:hover {
+    color: #000000c9;
 }
 
 #Products .Products .top-menu li.active {
@@ -392,12 +439,10 @@ header .Hero img {
     gap: 40px;
     text-align: right;
 }
-
 #Products .Products .product img,
 #Products .Products .product2 img {
     width: 50%;
 }
-
 #Products .Products .product div {
     max-width: 454px;
     display: flex;
@@ -405,7 +450,6 @@ header .Hero img {
     align-items: baseline;
     gap: 10px;
 }
-
 #Products .Products .product2 div.even {
     max-width: 454px;
     display: flex;
@@ -413,7 +457,6 @@ header .Hero img {
     align-items: end;
     gap: 10px;
 }
-
 #Products .Products h2 {
     color: #000;
     font-family: Hind Madurai;
@@ -422,7 +465,6 @@ header .Hero img {
     font-weight: 700;
     line-height: normal;
 }
-
 #Products .Products p {
     color: #00000099;
     font-family: Roboto;
@@ -434,14 +476,16 @@ header .Hero img {
     margin-right: 15px;
     /* 150% */
 }
-
+#Products .Products .product div a:hover,
+#Products .Products .product2 div a:hover {
+    animation: pulse512 1.0s infinite;
+}
 #Products .Products .product div .price,
 #Products .Products .product2 div .price {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
-
 #Products .Products .product div .price h2,
 #Products .Products .product2 div .price h2 {
     color: #000;
@@ -713,6 +757,13 @@ header .Hero img {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#Question .Question form input#Send:hover {
+    background-color: #973455;
 }
 
 
@@ -847,6 +898,13 @@ footer .Footer .container .newsletter input#Subscribe {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+footer .Footer .container .newsletter input#Subscribe:hover {
+    background-color: #973455;
 }
 
 footer .Footer .container .newsletter .payment {
