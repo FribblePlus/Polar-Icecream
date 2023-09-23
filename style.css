@@ -1,0 +1,1185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Common things */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fbf0f3;
+
+}
+
+
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #fbf0f3;
+}
+
+nav .Navigation {
+    max-width: 1125px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .Navigation img {
+    width: 79px;
+    margin: 10px 30px;
+}
+
+nav .Navigation .menu {
+    list-style-type: none;
+    transition: ease-in-out;
+    transition-duration: 0.8s;
+}
+
+nav .Navigation .menu li {
+    float: left;
+}
+
+nav .Navigation .menu a.menubutton {
+    display: none;
+    padding: 14px 50px;
+    margin: 30px;
+    border-radius: 5px;
+    background-color: #D23166;
+    text-decoration: none;
+    color: #FAFAFA;
+    font-family: Hind Madurai;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+nav .Navigation .menu li a {
+    color: #15010199;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav .Navigation .menu li a.active {
+    color: #D23166;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+nav .Navigation a.button {
+    padding: 14px 50px;
+    margin: 5px;
+    margin-right: 30px;
+    border-radius: 5px;
+    background-color: #D23166;
+    text-decoration: none;
+    color: #FAFAFA;
+    font-family: Hind Madurai;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 30px;
+    right: 30px;
+}
+
+.close-menu {
+    top: 30px;
+    right: 30px;
+}
+
+#check {
+    display: none;
+}
+
+
+
+/* Header or Hero section */
+header {
+    width: 100%;
+}
+
+header .Hero {
+    max-width: 1125px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+header .Hero .text {
+    margin-left: 30px;
+}
+
+header .Hero .text h2 {
+    color: #0F0101;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.4px;
+}
+
+header .Hero .text h1 {
+    color: #0F0101;
+    font-family: Fredoka;
+    font-size: 57.33px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105.5%;
+    margin-top: 6px;
+    /* 69.083px */
+}
+
+header .Hero .text h1 span {
+    color: #d64574;
+}
+
+header .Hero .text p {
+    color: #0F010199;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Hind Madurai;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    /* 150% */
+}
+
+header .Hero .text a.button {
+    padding: 14px 50px;
+    border-radius: 5px;
+    background-color: #D23166;
+    text-decoration: none;
+    color: #FAFAFA;
+    font-family: Hind Madurai;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+header .Hero img {
+    width: 44%;
+    margin-top: 65px;
+}
+
+
+
+/* Services section */
+#Services {
+    width: 100%;
+    background-color: #FFF;
+}
+
+#Services .Services {
+    max-width: 1125px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    gap: 39px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#Services .Services .card {
+    width: 250px;
+    height: 200px;
+    border: 1px solid #0f010111;
+    border-radius: 7px;
+    box-shadow: 20px 20px 50px 0px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#Services .Services .card img {
+    margin: 25px;
+}
+
+#Services .Services .card h2 {
+    color: #000;
+    font-family: Hind Madurai;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#Services .Services .card p {
+    color: #00000099;
+    text-align: center;
+    font-family: Hind Madurai;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 26px 26px 26px;
+}
+
+
+
+/* Oatmea icecream section */
+#Oatmea {
+    width: 100%;
+}
+
+#Oatmea .Oatmea {
+    max-width: 1125px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#Oatmea .Oatmea .information {
+    max-width: 442px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+#Oatmea .Oatmea .information h1 {
+    color: #150101;
+    font-family: Hind Madurai;
+    font-size: 44.2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110.5%;
+    /* 48.841px */
+}
+
+#Oatmea .Oatmea .information p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #15010199;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+#Oatmea .Oatmea .information a.details {
+    padding: 15px 40px;
+    border-radius: 5px;
+    background-color: #D23166;
+    text-decoration: none;
+    color: #FAFAFA;
+    font-family: Hind Madurai;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+
+
+/*Products*/
+#Products {
+    width: 100%;
+    background-color: #FFF;
+}
+
+#Products .Products {
+    max-width: 1125px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px;
+}
+
+#Products .Products h1 {
+    margin-top: 37px;
+    margin-bottom: 60px;
+    color: #150101;
+    font-family: Hind Madurai;
+    font-size: 44.2px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#Products .Products .top-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#Products .Products .top-menu li {
+    list-style-type: none;
+    color: #00000099;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#Products .Products .top-menu li.active {
+    color: #000;
+    border-bottom: 3px solid #D23166;
+}
+
+#Products .Products .product {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+#Products .Products .product2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    text-align: right;
+}
+
+#Products .Products .product img,
+#Products .Products .product2 img {
+    width: 50%;
+}
+
+#Products .Products .product div {
+    max-width: 454px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+}
+
+#Products .Products .product2 div.even {
+    max-width: 454px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+#Products .Products h2 {
+    color: #000;
+    font-family: Hind Madurai;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#Products .Products p {
+    color: #00000099;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+    /* 150% */
+}
+
+#Products .Products .product div .price,
+#Products .Products .product2 div .price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#Products .Products .product div .price h2,
+#Products .Products .product2 div .price h2 {
+    color: #000;
+    font-family: Hind Madurai;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#Products .Products .product div .price h3,
+#Products .Products .product2 div .price h3 {
+    color: #00000099;
+    font-family: Hind Madurai;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: strikethrough;
+    text-decoration: line-through;
+}
+
+#Products .Products .product div a,
+#Products .Products .product2 div a {
+    padding: 15px 50px;
+    border-radius: 5px;
+    background-color: #D23166;
+    text-decoration: none;
+    color: #FAFAFA;
+    font-family: Hind Madurai;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+
+
+/*Testimonials section*/
+#Testimonials {
+    width: 100%;
+    background-color: #fff;
+}
+
+#Testimonials .Testimonials {
+    max-width: 1125px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#Testimonials .Testimonials img {
+    margin-right: 30px;
+    max-width: 564px;
+    width: 40%;
+}
+
+#Testimonials .Testimonials .testimonial {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: baseline;
+}
+
+#Testimonials .Testimonials .testimonial .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#Testimonials .Testimonials .testimonial .profile img {
+    width: 59px;
+}
+
+#Testimonials .Testimonials .testimonial .profile .title {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 5px;
+}
+
+#Testimonials .Testimonials .testimonial .profile .title h1 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#Testimonials .Testimonials .testimonial .profile .title h3 {
+    color: #00000099;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#Testimonials .Testimonials .testimonial q {
+    max-width: 322px;
+    color: #00000099;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+#Testimonials .Testimonials .testimonial .carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 26px;
+}
+
+
+
+/*Order section*/
+#Order {
+    width: 100%;
+}
+
+#Order .Order {
+    max-width: 1125px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#Order .Order img.screenshot {
+    position: relative;
+    top: 50px;
+    z-index: 100;
+    margin-left: 30px;
+}
+
+#Order .Order .instruction {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 621px;
+}
+
+#Order .Order .instruction div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#Order .Order .instruction h1 {
+    margin-right: 30px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 44.2px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#Order .Order .instruction p {
+    max-width: 605px;
+    color: #0F010199;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+}
+
+#Order .Order .instruction div h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#Order .Order .instruction div .icon {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#Order .Order .instruction .app {
+    max-width: 500px;
+}
+
+
+
+/*Question section*/
+#Question {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+
+#Question .Question {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#Question .Question h1 {
+    max-width: 522px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#Question .Question form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#Question .Question form input#question {
+    width: 503px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border: none;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    color: #0F000099;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#Question .Question form input#Send {
+    width: 134px;
+    padding-top: 30px;
+    padding: auto;
+    padding-bottom: 30px;
+    background-color: #D23166;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+/*Footer section*/
+footer {
+    color: #ffffffcc;
+    width: 100%;
+    background-color: #000;
+}
+
+footer .Footer {
+    max-width: 1125px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+footer .Footer .logo img {
+    padding-left: 30px;
+}
+
+footer .Footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .Footer .container div.firstcolumn p {
+    max-width: 207px;
+    margin-top: 9px;
+    margin-bottom: 25px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.687%;
+    letter-spacing: 0.12px;
+}
+
+footer .Footer .container div.firstcolumn div h3 {
+    margin-bottom: 8px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+footer .Footer .container div.firstcolumn div div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .Footer .container .footernav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+footer .Footer .container .footernav li {
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: none;
+}
+
+footer .Footer .container .newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+footer .Footer .container .newsletter h2 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+footer .Footer .container .newsletter form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .Footer .container .newsletter form input#email {
+    background-color: #00000000;
+    width: 500px;
+    max-width: 263px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border: 2px solid #D23166;
+    border-radius: 5px;
+    color: #FFFFFF99;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer .Footer .container .newsletter input#Subscribe {
+    margin-right: 30px;
+    width: 500px;
+    max-width: 125px;
+    padding-top: 20px;
+    padding: auto;
+    padding-bottom: 20px;
+    background-color: #D23166;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer .Footer .container .newsletter .payment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+/* For tablet and mobile (resposive) */
+@media(max-width:1000px) {
+
+
+
+    /* Navigation Bar */
+    nav .Navigation .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #fbf0f3;
+        border-left: 1px solid #0F010199;
+    }
+
+    nav .Navigation .menu a.menubutton {
+        display: block;
+        font-size: 5vw;
+    }
+
+    nav .Navigation .menu li a {
+        margin-top: 10px;
+        font-size: 5vw;
+
+    }
+
+    nav .Navigation .menu li a.active {
+        margin-top: 10px;
+        font-size: 5vw;
+
+    }
+
+    nav .Navigation a.button {
+        display: none;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked~.menu {
+        right: 0
+    }
+
+
+
+    /* Header or Hero Section */
+    header .Hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header .Hero img {
+        width: 70%;
+    }
+
+    header .Hero .text {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .Hero .text h2 {
+        font-size: 3vw;
+    }
+
+    header .Hero .text h1 {
+        font-size: 9vw;
+    }
+
+    header .Hero .text p {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    header .Hero .text a.button {
+        font-size: 3vw;
+        margin-bottom: 60px;
+    }
+
+
+
+    /*Oatmea Section*/
+    #Oatmea .Oatmea {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #Oatmea .Oatmea .information {
+        align-items: center;
+        text-align: center;
+    }
+
+    #Oatmea .Oatmea img {
+        width: 70%;
+    }
+
+    #Oatmea .Oatmea .information h1 {
+        font-size: 9vw;
+    }
+
+    #Oatmea .Oatmea .information p {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+
+
+    /*Products section*/
+    #Products .Products .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Products .Products .product2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #Products .Products .product div,
+    #Products .Products .product2 div.even {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #Products .Products .product div h2,
+    #Products .Products .product2 div.even h2 {
+        font-size: 6vw;
+    }
+
+    #Products .Products .product div p,
+    #Products .Products .product2 div.even p {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #Products .Products .product img,
+    #Products .Products .product2 img {
+        width: 70%;
+    }
+
+    #Products .Products .top-menu li {
+        font-size: 5vw;
+    }
+
+
+
+    /*Testimonials section*/
+    #Testimonials .Testimonials {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 250px;
+    }
+
+    #Testimonials .Testimonials img {
+        margin: 0px;
+        width: 80%;
+    }
+
+    #Testimonials .Testimonials .testimonial {
+        margin: 0;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #Testimonials .Testimonials .testimonial .profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Testimonials .Testimonials .testimonial .profile img {
+        margin: 0;
+        width: 30%;
+        min-width: 59px;
+    }
+
+    #Testimonials .Testimonials .testimonial .profile .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Testimonials .Testimonials .testimonial .profile .title h1 {
+        font-size: 5vw;
+    }
+
+    #Testimonials .Testimonials .testimonial .profile .title h3 {
+        font-size: 2vw;
+    }
+
+    #Testimonials .Testimonials .testimonial q {
+        font-size: 3vw;
+        max-width: 500px;
+        width: 70%;
+        line-height: 4vw;
+        text-align: center;
+    }
+
+    #Testimonials .Testimonials .testimonial .carousel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #Testimonials .Testimonials .testimonial .carousel img {
+        margin: 0;
+    }
+
+
+
+    /*Order section*/
+    #Order .Order {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+
+    #Order .Order img.screenshot {
+        margin: 0;
+        width: 70%;
+        position: relative;
+        top: -200px;
+        filter: drop-shadow(0px -4px 22px rgba(0, 0, 0, 0.13));
+    }
+
+    #Order .Order .instruction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Order .Order .instruction h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    #Order .Order .instruction p {
+        font-size: 3vw;
+        line-height: 4vw;
+        text-align: center;
+    }
+
+    #Order .Order .instruction div {
+        font-size: 4vw;
+        line-height: 4vw;
+        text-align: center;
+    }
+
+    #Order .Order .instruction .app {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Order .Order .instruction .app img {
+        margin: 0;
+    }
+
+
+
+
+    /*Question section*/
+    #Question .Question {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    #Question .Question h1 {
+        margin: 15px;
+        font-size: 9vw;
+    }
+
+    #Question .Question form input#question {
+        max-width: 300px;
+        width: 70%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        font-size: 3vw;
+    }
+
+    #Question .Question form input#Send {
+        max-width: 100px;
+        width: 30%;
+        font-size: 3vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+
+    /*Footer section*/
+    footer .Footer .container .newsletter form input#email {
+        padding: 10px;
+        width: 60%;
+    }
+
+    footer .Footer .container .newsletter form input#Subscribe {
+        padding: 10px;
+        width: 25%;
+    }
+}
